@@ -27,6 +27,7 @@ import {
 import { MagneticButton } from "@/components/ui/magnetic-button";
 import { FadeIn } from "@/components/ui/fade-in";
 import { TiltCard } from "@/components/ui/tilt-card";
+import { EcosystemCards } from "@/components/landing/EcosystemCards";
 
 /**
  * Portafolio Santuariowav — Hero full-screen con VIDEO (como referencia Folioblox)
@@ -515,6 +516,8 @@ export default function Page() {
       </section>
 
       <Separator className="mx-auto max-w-6xl bg-white/10" />
+
+      <EcosystemCards />
 
       {/* About */}
       <section
