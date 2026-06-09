@@ -36,6 +36,7 @@ SOUL.md
 TOOLS.md
 USER.md
 lib/Openclaw
+memory/
 
 # debug
 npm-debug.log*

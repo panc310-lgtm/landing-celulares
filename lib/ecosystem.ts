@@ -1,42 +1,68 @@
+export type EcosystemTone = "marketing" | "revista" | "eventos";
+
 export type EcosystemCard = {
-  id: string;
   title: string;
+  shortTitle: string;
   label: string;
+  eyebrow: string;
+  headline: string;
   description: string;
   href: string;
+  featured: boolean;
   tags: string[];
-  tone: "marketing" | "revista" | "eventos";
+  cta: string;
+  tone: EcosystemTone;
+  statement: string;
+  marker: string;
 };
 
 export const ecosystemCards: EcosystemCard[] = [
   {
-    id: "santuario-marketing",
     title: "Santuario Marketing",
-    label: "Growth",
+    shortTitle: "Marketing",
+    label: "Linea comercial",
+    eyebrow: "Contenido / Estrategia / Conversion",
+    headline: "No es solo contenido. Es una estructura.",
     description:
-      "Estrategia, pauta y sistemas de crecimiento para marcas con ambicion digital.",
-    href: "/ads",
-    tags: ["Estrategia", "Ads", "Conversion"],
+      "Estrategia, contenido y pauta para marcas que quieren crecer con identidad.",
+    href: "/marketing",
+    featured: true,
+    tags: ["Reels", "Ads", "Funnel", "Marca", "Conversion"],
+    cta: "Ver linea comercial",
     tone: "marketing",
+    statement: "NO ES SOLO CONTENIDO. ES UNA ESTRUCTURA.",
+    marker: "001",
   },
   {
-    id: "santuariowav-revista",
     title: "SANTUARIOWAV Revista",
-    label: "Editorial",
+    shortTitle: "Revista",
+    label: "Linea editorial",
+    eyebrow: "Cultura / Opinion / Musica",
+    headline: "La calle es nuestro escenario.",
     description:
-      "Contenido editorial, cultura y narrativa visual para amplificar historias.",
-    href: "/reels",
-    tags: ["Cultura", "Contenido", "Narrativa"],
+      "Opinion, analisis creativo, musica, marcas y fenomenos culturales desde una mirada editorial.",
+    href: "/revista",
+    featured: false,
+    tags: ["Opinion", "Musica", "Marcas", "Cultura", "Tendencias"],
+    cta: "Leer revista",
     tone: "revista",
+    statement: "LA CALLE ES NUESTRO ESCENARIO.",
+    marker: "VOL. 03",
   },
   {
-    id: "santuario-eventos",
     title: "Santuario Eventos",
-    label: "Experiencias",
+    shortTitle: "Eventos",
+    label: "Linea experiencial",
+    eyebrow: "Recaps / Agenda / Cobertura",
+    headline: "Del evento al archivo.",
     description:
-      "Experiencias, produccion y cobertura audiovisual para momentos memorables.",
-    href: "/estrategia",
-    tags: ["Eventos", "Produccion", "Cobertura"],
+      "Recaps, coberturas y agenda de los espacios donde ocurre el movimiento.",
+    href: "/eventos",
+    featured: false,
+    tags: ["Recaps", "Agenda", "Cobertura", "Video", "Experiencia"],
+    cta: "Ver eventos",
     tone: "eventos",
+    statement: "DEL EVENTO AL ARCHIVO.",
+    marker: "REC",
   },
 ];
