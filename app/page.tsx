@@ -1,9 +1,9 @@
-import { HomeHero3D } from "@/components/landing/HomeHero3D";
+import { SantuarioHomeViewport } from "@/components/home/SantuarioHomeViewport";
 
 export default function HomePage() {
   return (
-    <main className="home-main">
-      <HomeHero3D />
+    <main className="santuario-home-main">
+      <SantuarioHomeViewport />
     </main>
   );
 }
