@@ -3,7 +3,7 @@ import { marketingMethod } from "@/lib/marketing";
 
 export function MarketingFocusBanner() {
   return (
-    <section className="marketing-focus-banner">
+    <section id="enfoque" className="marketing-focus-banner">
       <div className="marketing-focus-symbol" aria-hidden="true">
         <svg viewBox="0 0 100 100">
           <polygon points="50 7 89 30 89 70 50 93 11 70 11 30" />

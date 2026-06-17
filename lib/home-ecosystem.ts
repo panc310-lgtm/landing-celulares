@@ -11,6 +11,7 @@ export type HomeEcosystemCard = {
   cta: string;
   href: string;
   image: string;
+  imageLarge: string;
   tone: HomeEcosystemTone;
   featured?: boolean;
 };
@@ -34,7 +35,8 @@ export const homeEcosystemCards: HomeEcosystemCard[] = [
     tags: ["OPINIÓN", "MÚSICA", "MARCAS", "CULTURA", "TENDENCIAS"],
     cta: "LEER REVISTA",
     href: "/revista",
-    image: "/santuario/home/Tarjeta 1_.png",
+    image: "/santuario/home/dimension 1.png",
+    imageLarge: "/santuario/home/Tarjeta 1_.png",
     tone: "revista",
   },
   {
@@ -47,7 +49,8 @@ export const homeEcosystemCards: HomeEcosystemCard[] = [
     tags: ["REELS", "ADS", "FUNNEL", "MARCA", "CONVERSIÓN"],
     cta: "VER LÍNEA COMERCIAL",
     href: "/marketing",
-    image: "/santuario/home/tarjeta 2_.png",
+    image: "/santuario/home/dimension 2.png",
+    imageLarge: "/santuario/home/tarjeta 2_.png",
     tone: "marketing",
     featured: true,
   },
@@ -61,7 +64,8 @@ export const homeEcosystemCards: HomeEcosystemCard[] = [
     tags: ["RECAPS", "AGENDA", "COBERTURA", "VIDEO", "EXPERIENCIA"],
     cta: "VER EVENTOS",
     href: "/eventos",
-    image: "/santuario/home/tarjeta 3_.png",
+    image: "/santuario/home/dimension 3.png",
+    imageLarge: "/santuario/home/tarjeta 3_.png",
     tone: "eventos",
   },
 ];

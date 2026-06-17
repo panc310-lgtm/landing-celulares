@@ -25,29 +25,32 @@ export function MarketingFeatureCard({
   const Icon = iconMap[icon as keyof typeof iconMap] ?? Edit3;
 
   return (
-    <motion.article
-      className="marketing-feature-card"
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{
-        duration: 0.55,
-        delay: index * 0.08,
-        ease: "easeOut" as const,
-      }}
-      whileHover={{ y: -6, scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
+    <div
+      className={`marketing-feature-card-shell marketing-feature-card-shell-${index + 1}`}
     >
-      <span className="marketing-feature-icon">
-        <Icon size={22} />
-      </span>
-      <div>
-        <h3 className="marketing-feature-title">{title}</h3>
-        <p className="marketing-feature-description">{description}</p>
-      </div>
-      <span className="marketing-feature-plus">
-        <Plus size={16} />
-      </span>
-    </motion.article>
+      <motion.article
+        className="marketing-feature-card"
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 0.55,
+          delay: index * 0.08,
+          ease: "easeOut" as const,
+        }}
+        whileHover={{ y: -6, scale: 1.025 }}
+        whileTap={{ scale: 0.98 }}
+      >
+        <span className="marketing-feature-icon">
+          <Icon size={22} />
+        </span>
+        <div>
+          <h3 className="marketing-feature-title">{title}</h3>
+          <p className="marketing-feature-description">{description}</p>
+        </div>
+        <span className="marketing-feature-plus">
+          <Plus size={16} />
+        </span>
+      </motion.article>
+    </div>
   );
 }
